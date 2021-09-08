@@ -1,16 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Palindrome BirthDate</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palindrome</title>
-  </head>
-  <body>
-    <input name="date" id="date" type="date" />
-    <button id="btn-submit">Check</button>
 
-    <div id="outputEl"></div>
-    <script src="./src/index.js"></script>
+    <!-- talwind CDN -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="https://i.ibb.co/F7LHFPc/icons8-party-64.png"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col justify-center items-center h-screen">
+    <nav
+      class="
+        flex
+        justify-between
+        h-20
+        w-screen
+        items-center
+        bg-blue-100
+        shadow
+        md:px-6
+      "
+    >
+      <h1 class="flex font-bold">
+        <span class="px-2"
+          ><svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+            ></path></svg></span
+        >Palindrome BirthDay
+      </h1>
+      <div class="flex space-x-2 font-bold items-center">
+        <a
+          class="flex items-center"
+          href="https://github.com/parthpandyappp/numero-de-la-suerte/"
+          ><span
+            ><img
+              src="https://img.icons8.com/doodle/48/000000/github--v1.png" /></span
+        ></a>
+        <a
+          class="flex items-center px-1"
+          href="https://parthpandyappp.github.io/"
+          ><span
+            ><img
+              src="https://img.icons8.com/bubbles/50/000000/gender-neutral-user.png" /></span
+        ></a>
+      </div>
+    </nav>
+
+    <div class="flex flex-col justify-center items-center h-full space-y-5">
+      <input
+        class="border-2 border-gray-700 rounded py-2 px-2"
+        name="date"
+        id="date"
+        type="date"
+      />
+      <button
+        class="bg-blue-500 text-white font-bold px-8 py-3 rounded"
+        id="btn-submit"
+      >
+        Check
+      </button>
+    </div>
+
+    <div class="font-bold text-lg mb-20 shadow-lg" id="outputEl"></div>
+    <script src="src/index.js"></script>
   </body>
+  <footer
+    class="flex justify-center items-center bg-blue-100 space-x-2 h-20 w-screen"
+  >
+    <a href="https://twitter.com/parthpandyappp/">
+      <img src="https://img.icons8.com/doodle/48/000000/twitter-circled.png" />
+    </a>
+    <a href="https://www.linkedin.com/in/parthpandyappp">
+      <img src="https://img.icons8.com/doodle/48/000000/linkedin-circled.png" />
+    </a>
+    <a href="https://github.com/parthpandyappp"
+      ><img src="https://img.icons8.com/plasticine/60/000000/github.png"
+    /></a>
+  </footer>
 </html>
