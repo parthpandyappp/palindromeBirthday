@@ -144,7 +144,7 @@ function getNextPalindrome(date) {
         ctr++;
         var palindrome = checkForAllDateFormats(nextDate);
         if (palindrome) {
-            return ("This date is not Palindrome, though after " + ctr + " days on " + nextDate.day + "-" + nextDate.month + "-" + nextDate.year + " will have the next palimndrome day");
+            return ("This date is not Palindrome, though after " + ctr + " days on " + nextDate.day + "-" + nextDate.month + "-" + nextDate.year + " will have the next palindrome day :)");
             break;
         }
 
